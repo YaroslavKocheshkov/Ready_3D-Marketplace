@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation — PolyMarket</title>
+    <link rel="stylesheet" href="learning.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <span class="logo-image">
+                <img src="Kuvat/logo.png" alt="PolyMarket logo">
+            </span>
+            <span>Poly<span class="logo-accent">Market</span></span>
+        </a>
+        <nav class="main-nav">
+            <a href="Untitled-1.html" class="active">Learn</a>
+            <a href="shop.html">Marketplace</a>
+            <a href="index.html#resources">Resources</a>
+        </nav>
+        <div class="header-actions">
+            <button class="search-button" aria-label="Search">
+                <img class="header-icon header-icon--search" src="Kuvat/search-icon.png" alt="" aria-hidden="true">
+                <span>Search</span>
+            </button>
+            <a href="shop.html" class="cart">
+                <img class="header-icon header-icon--cart" src="Kuvat/cart-icon.png" alt="" aria-hidden="true">
+                Cart <span id="cart-count">0</span>
+            </a>
+            <a href="https://www.blender.org" target="_blank" rel="noopener" class="blender-link">Blender ↗</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <p class="subtitle">BLENDER CHEATSHEET</p>
+            <h1>Animation</h1>
+            <p class="description">A quick reference for keyframes, timing and clean motion</p>
+        </section>
+
+        <div class="back-container">
+            <a href="Untitled-1.html" class="back-button">← Back to Learning</a>
+        </div>
+
+        <article class="modifier-card">
+            <div class="modifier-image">
+                <div class="hotkey-display">
+                    <span>Space</span>
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">01</span>
+                <h2>Playback</h2>
+                <p>Starts and stops the animation preview in the timeline.</p>
+                <div class="modifier-details">
+                    <div>
+                        <span>SHORTCUT</span>
+                        <p>Space</p>
+                    </div>
+                    <div>
+                        <span>ACTION</span>
+                        <p>Play · Pause</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modifier-card reverse">
+            <div class="modifier-image">
+                <div class="hotkey-display">
+                    <span>I</span>
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">02</span>
+                <h2>Insert Keyframe</h2>
+                <p>Creates a new keyframe for the selected property at the current frame.</p>
+                <div class="modifier-details">
+                    <div>
+                        <span>SHORTCUT</span>
+                        <p>I</p>
+                    </div>
+                    <div>
+                        <span>ACTION</span>
+                        <p>Insert Keyframe</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modifier-card">
+            <div class="modifier-image">
+                <div class="hotkey-display">
+                    <span>Alt</span>
+                    <span>I</span>
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">03</span>
+                <h2>Delete Keyframe</h2>
+                <p>Removes the keyframe at the current frame for the selected property.</p>
+                <div class="modifier-details">
+                    <div>
+                        <span>SHORTCUT</span>
+                        <p>Alt + I</p>
+                    </div>
+                    <div>
+                        <span>ACTION</span>
+                        <p>Delete Keyframe</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modifier-card reverse">
+            <div class="modifier-image">
+                <div class="hotkey-display">
+                    <span>↑</span>
+                    <span>↓</span>
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">04</span>
+                <h2>Jump Keyframe</h2>
+                <p>Moves the playhead to the next or previous keyframe on the timeline.</p>
+                <div class="modifier-details">
+                    <div>
+                        <span>SHORTCUT</span>
+                        <p>Up · Down</p>
+                    </div>
+                    <div>
+                        <span>ACTION</span>
+                        <p>Next · Previous Keyframe</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modifier-card">
+            <div class="modifier-image">
+                <div class="hotkey-display">
+                    <span>Shift</span>
+                    <span>←</span>
+                    <span>→</span>
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">05</span>
+                <h2>Jump to Start / End</h2>
+                <p>Instantly moves the playhead to the first or last frame of the timeline.</p>
+                <div class="modifier-details">
+                    <div>
+                        <span>SHORTCUT</span>
+                        <p>Shift + ← · Shift + →</p>
+                    </div>
+                    <div>
+                        <span>ACTION</span>
+                        <p>Jump to Start · End</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Created by ItzLin4ix © 2026</p>
+        <p>Blender Cheatsheet</p>
+    </footer>
+
+    <script src="assets.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

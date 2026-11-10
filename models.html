@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Models — PolyMarket</title>
+    <link rel="stylesheet" href="shopstyle.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="category.css">
+</head>
+<body data-category="models">
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <span class="logo-image"><img src="Kuvat/logo.png" alt="PolyMarket logo"></span>
+            <span>Poly<span class="logo-accent">Market</span></span>
+        </a>
+        <nav class="main-nav">
+            <a href="Untitled-1.html">Learn</a>
+            <a href="index.html">Main</a>
+            <a href="shop.html" class="active">Marketplace</a>
+        </nav>
+        <div class="header-actions">
+            <button class="search-button" id="open-search" type="button" aria-label="Search">
+                <img class="header-icon header-icon--search" src="Kuvat/search-icon.png" alt="" aria-hidden="true">
+                <span>Search</span>
+            </button>
+            <a href="#" class="cart">
+                <img class="header-icon header-icon--cart" src="Kuvat/cart-icon.png" alt="" aria-hidden="true">Cart <span id="cart-count">0</span></a>
+            <a href="https://www.blender.org" target="_blank" rel="noopener" class="blender-link">Blender ↗</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="cat-hero">
+            <div class="breadcrumbs"><a href="shop.html">MARKETPLACE</a> / <b>3D MODELS</b></div>
+            <h1>3D <span>Models</span></h1>
+            <p>Characters, props and vehicles ready for your next Blender project.</p>
+        </section>
+
+        <div class="category-toolbar">
+            <div class="result-count" id="result-count"></div>
+            <div class="toolbar-controls">
+                <input id="filter-input" type="search" placeholder="Filter this category..." aria-label="Filter assets">
+                <select id="sort-select" aria-label="Sort assets">
+                    <option value="default">Featured</option>
+                    <option value="price-asc">Price: low to high</option>
+                    <option value="price-desc">Price: high to low</option>
+                    <option value="name">Name A–Z</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="category-products">
+            <div class="product-grid" id="category-grid"></div>
+        </section>
+    </main>
+
+    <footer class="market-footer">
+        <div>Poly<span>Market</span></div>
+        <p>Created by ItzLin4ix © 2026</p>
+        <div class="footer-links">
+            <a href="#">ABOUT</a>
+            <a href="#">LICENSE</a>
+            <a href="#">SUPPORT</a>
+            <a href="#">CREATORS</a>
+        </div>
+    </footer>
+
+    <script src="header.js"></script>
+    <script src="assets.js"></script>
+    <script src="search.js"></script>
+    <script src="category.js"></script>
+</body>
+</html>

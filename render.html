@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render — PolyMarket</title>
+    <link rel="stylesheet" href="learning.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <span class="logo-image">
+                <img src="Kuvat/logo.png" alt="PolyMarket logo">
+            </span>
+            <span>Poly<span class="logo-accent">Market</span></span>
+        </a>
+        <nav class="main-nav">
+            <a href="Untitled-1.html" class="active">Learn</a>
+            <a href="shop.html">Marketplace</a>
+            <a href="index.html#resources">Resources</a>
+        </nav>
+        <div class="header-actions">
+            <button class="search-button" aria-label="Search">
+                <img class="header-icon header-icon--search" src="Kuvat/search-icon.png" alt="" aria-hidden="true">
+                <span>Search</span>
+            </button>
+            <a href="shop.html" class="cart">
+                <img class="header-icon header-icon--cart" src="Kuvat/cart-icon.png" alt="" aria-hidden="true">
+                Cart <span id="cart-count">0</span>
+            </a>
+            <a href="https://www.blender.org" target="_blank" rel="noopener" class="blender-link">Blender ↗</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <p class="subtitle">BLENDER CHEATSHEET</p>
+            <h1>Render</h1>
+            <p class="description">A quick reference for Blender rendering settings</p>
+        </section>
+
+        <div class="back-container">
+            <a href="Untitled-1.html" class="back-button">← Back to Learning</a>
+        </div>
+
+        <article class="modifier-card">
+            <div class="modifier-image">
+                <div class="render-display">
+                    <img src="Kuvat/eveecycles.jpg" alt="Eevee vs Cycles render comparison">
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">01</span>
+                <h2>Render Engine</h2>
+                <p>
+                    Determines how Blender calculates the final
+                    image. Choose between real-time and physically
+                    based rendering.
+                </p>
+                <div class="modifier-details">
+                    <div>
+                        <span>OPTIONS</span>
+                        <p>Cycles · Eevee</p>
+                    </div>
+                    <div>
+                        <span>USE CASE</span>
+                        <p>Final image rendering</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modifier-card reverse">
+            <div class="modifier-image">
+                <div class="render-display">
+                    <img src="Kuvat/samples.jpg" alt="Render samples comparison">
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">02</span>
+                <h2>Samples</h2>
+                <p>
+                    Controls how many samples are used to calculate
+                    the rendered image. Higher values usually reduce
+                    noise but increase render time.
+                </p>
+                <div class="modifier-details">
+                    <div>
+                        <span>LOW</span>
+                        <p>Fast preview</p>
+                    </div>
+                    <div>
+                        <span>HIGH</span>
+                        <p>Better quality</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modifier-card">
+            <div class="modifier-image">
+                <div class="render-display">
+                    <img src="Kuvat/render4k.jpg" alt="4K render resolution example">
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">03</span>
+                <h2>Resolution</h2>
+                <p>Defines the width and height of the final rendered image.</p>
+                <div class="modifier-details">
+                    <div>
+                        <span>RESOLUTION</span>
+                        <p>480p vs 4k</p>
+                    </div>
+                    <div>
+                        <span>USE CASE</span>
+                        <p>Image and animation output</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modifier-card reverse">
+            <div class="modifier-image">
+                <div class="render-display">
+                    <img src="Kuvat/light.jpg" alt="Scene lighting example">
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">04</span>
+                <h2>Lighting</h2>
+                <p>Controls how light interacts with objects and creates the overall mood of the scene.</p>
+                <div class="modifier-details">
+                    <div>
+                        <span>MAIN TYPES</span>
+                        <p>Point · Area · Sun</p>
+                    </div>
+                    <div>
+                        <span>USE CASE</span>
+                        <p>Scene illumination</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modifier-card">
+            <div class="modifier-image">
+                <div>
+                    <img src="Kuvat/denoising.png" alt="">
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">05</span>
+                <h2>Denoising</h2>
+                <p>Reduces visible noise in rendered images, allowing you to use fewer samples.</p>
+                <div class="modifier-details">
+                    <div>
+                        <span>USE CASE</span>
+                        <p>Cleaner renders</p>
+                    </div>
+                    <div>
+                        <span>BENEFIT</span>
+                        <p>Faster rendering</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modifier-card reverse">
+            <div class="modifier-image">
+                <div>
+                    <img src="Kuvat/render.png" alt="">
+                </div>
+            </div>
+            <div class="modifier-info">
+                <span class="modifier-number">06</span>
+                <h2>Output</h2>
+                <p>Defines where and how Blender saves the final rendered image or animation.</p>
+                <div class="modifier-details">
+                    <div>
+                        <span>FORMATS</span>
+                        <p>PNG · JPEG · EXR</p>
+                    </div>
+                    <div>
+                        <span>USE CASE</span>
+                        <p>Save final render</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Created by ItzLin4ix © 2026</p>
+        <p>Blender Cheatsheet</p>
+    </footer>
+
+    <script src="assets.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

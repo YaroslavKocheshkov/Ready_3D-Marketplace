@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials & Textures — PolyMarket</title>
+    <link rel="stylesheet" href="learning.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <span class="logo-image">
+                <img src="Kuvat/logo.png" alt="PolyMarket logo">
+            </span>
+            <span>Poly<span class="logo-accent">Market</span></span>
+        </a>
+        <nav class="main-nav">
+            <a href="Untitled-1.html" class="active">Learn</a>
+            <a href="shop.html">Marketplace</a>
+            <a href="index.html#resources">Resources</a>
+        </nav>
+        <div class="header-actions">
+            <button class="search-button" aria-label="Search">
+                <img class="header-icon header-icon--search" src="Kuvat/search-icon.png" alt="" aria-hidden="true">
+                <span>Search</span>
+            </button>
+            <a href="shop.html" class="cart">
+                <img class="header-icon header-icon--cart" src="Kuvat/cart-icon.png" alt="" aria-hidden="true">
+                Cart <span id="cart-count">0</span>
+            </a>
+            <a href="https://www.blender.org" target="_blank" rel="noopener" class="blender-link">Blender ↗</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <p class="subtitle">BLENDER CHEATSHEET</p>
+            <h1>Materials & Textures</h1>
+            <p class="description">A quick reference for Blender materials, shaders and textures.</p>
+        </section>
+
+        <div class="back-container">
+            <a href="Untitled-1.html" class="back-button">← Back to Learning</a>
+        </div>
+
+        <section class="cheatsheet-section">
+            <div class="section-heading">
+                <h2>Materials</h2>
+                <p>The basic building blocks of surface appearance</p>
+            </div>
+            <article class="modifier-card">
+                <div class="modifier-image">
+                    <img src="Kuvat/pbr.jpg" alt="Principled PBR">
+                </div>
+                <div class="modifier-info">
+                    <span class="modifier-number">01</span>
+                    <h2>Principled PBR</h2>
+                    <p>The main shader used to create realistic materials in Blender.</p>
+                    <div class="modifier-details">
+                        <div>
+                            <span>USE CASE</span>
+                            <p>Most everyday materials</p>
+                        </div>
+                        <div>
+                            <span>IMPORTANT MAPS</span>
+                            <p>Base Color · Metallic · Roughness · Normal</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="modifier-card reverse">
+                <div class="modifier-image">
+                    <img src="Kuvat/handpaint2.jpg" alt="Handpainted material">
+                </div>
+                <div class="modifier-info">
+                    <span class="modifier-number">02</span>
+                    <h2>HANDPAINT</h2>
+                    <p>Hand-painted material created by hand, primarily using a graphics tablet.</p>
+                    <div class="modifier-details">
+                        <div>
+                            <span>USE CASE</span>
+                            <p>Cartoons, stylized and low-poly games</p>
+                        </div>
+                        <div>
+                            <span>IMPORTANT MAPS</span>
+                            <p>Base Color · Roughness · Normal</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="modifier-card">
+                <div class="modifier-image">
+                    <img src="Kuvat/Smartmaterial.jpg" alt="Smart Material example">
+                </div>
+                <div class="modifier-info">
+                    <span class="modifier-number">03</span>
+                    <h2>SMART MATERIAL</h2>
+                    <p>
+                        Automatically creates a complete material
+                        setup using procedural textures and shaders,
+                        making it easier to create detailed surfaces
+                    </p>
+                    <div class="modifier-details">
+                        <div>
+                            <span>USE CASE</span>
+                            <p>Quickly creating detailed materials</p>
+                        </div>
+                        <div>
+                            <span>EXAMPLES</span>
+                            <p>Metal · Wood · Plastic · Fabric · Stone</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="cheatsheet-section">
+            <div class="section-heading">
+                <h2>Texture Maps</h2>
+                <p>The main texture maps used to control the appearance and physical properties of materials.</p>
+            </div>
+            <article class="modifier-card reverse">
+                <div class="modifier-image">
+                    <img src="Kuvat/base-color.png" alt="Base Color texture map">
+                </div>
+                <div class="modifier-info">
+                    <span class="modifier-number">01</span>
+                    <h2>BASE COLOR</h2>
+                    <p>Defines the main visible color of the material. It contains the basic color information of the surface.</p>
+                    <div class="modifier-details">
+                        <div>
+                            <span>CONTROLS</span>
+                            <p>Surface Color</p>
+                        </div>
+                        <div>
+                            <span>COMMON USE</span>
+                            <p>Wood · Metal · Fabric · Plastic · Stone</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="modifier-card">
+                <div class="modifier-image">
+                    <img src="Kuvat/roughness.png" alt="Roughness texture map">
+                </div>
+                <div class="modifier-info">
+                    <span class="modifier-number">02</span>
+                    <h2>ROUGHNESS</h2>
+                    <p>
+                        Controls how rough or smooth a surface appears.
+                        It determines how strongly light is scattered across the material.
+                    </p>
+                    <div class="modifier-details">
+                        <div>
+                            <span>LOW VALUE</span>
+                            <p>Smooth · Glossy · Reflective</p>
+                        </div>
+                        <div>
+                            <span>HIGH VALUE</span>
+                            <p>Rough · Matte · Diffuse</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="modifier-card reverse">
+                <div class="modifier-image">
+                    <img src="Kuvat/metallic.png" alt="Metallic texture map">
+                </div>
+                <div class="modifier-info">
+                    <span class="modifier-number">03</span>
+                    <h2>METALLIC</h2>
+                    <p>Controls whether the material behaves like a metal or a non-metal surface.</p>
+                    <div class="modifier-details">
+                        <div>
+                            <span>VALUE 0</span>
+                            <p>Non-metal · Plastic · Wood · Stone</p>
+                        </div>
+                        <div>
+                            <span>VALUE 1</span>
+                            <p>Metal · Steel · Aluminum · Gold</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="modifier-card">
+                <div class="modifier-image">
+                    <img src="Kuvat/normal.png" alt="Normal texture map">
+                </div>
+                <div class="modifier-info">
+                    <span class="modifier-number">04</span>
+                    <h2>NORMAL</h2>
+                    <p>
+                        Simulates small surface details by changing
+                        how light interacts with the surface without
+                        significantly changing the geometry.
+                    </p>
+                    <div class="modifier-details">
+                        <div>
+                            <span>CONTROLS</span>
+                            <p>Surface normals and small details</p>
+                        </div>
+                        <div>
+                            <span>COMMON USE</span>
+                            <p>Scratches · Panels · Fabric · Concrete · Bricks</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by ItzLin4ix © 2026</p>
+        <p>Blender Cheatsheet</p>
+    </footer>
+
+    <script src="assets.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace — PolyMarket</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="shopstyle.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <span class="logo-image"><img src="Kuvat/logo.png" alt="PolyMarket logo"></span>
+            <span>Poly<span class="logo-accent">Market</span></span>
+        </a>
+        <nav class="main-nav">
+            <a href="Untitled-1.html">Learn</a>
+            <a href="index.html">Main</a>
+            <a href="shop.html" class="active">Marketplace</a>
+        </nav>
+        <div class="header-actions">
+            <button class="search-button" id="open-search" type="button" aria-label="Search">
+                <img class="header-icon header-icon--search" src="Kuvat/search-icon.png" alt="" aria-hidden="true">
+                <span>Search</span>
+            </button>
+            <a href="#" class="cart">
+                <img class="header-icon header-icon--cart" src="Kuvat/cart-icon.png" alt="" aria-hidden="true">Cart <span id="cart-count">0</span></a>
+            <a href="https://www.blender.org" target="_blank" rel="noopener" class="blender-link">Blender ↗</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="shop-hero-model-wrap" aria-label="3D asset preview">
+                <model-viewer
+                    class="shop-hero-model"
+                    src="Models/arlo.glb"
+                    camera-controls
+                    disable-zoom
+                    field-of-view="35deg"
+                    auto-rotate
+                    orientation="deg -5deg -70deg"
+                    rotation-per-second="12deg"
+                    shadow-intensity="1.2"
+                    exposure="1"
+                    environment-image="neutral"
+                    interaction-prompt="none"
+                    alt="3D asset preview"></model-viewer>
+            </div>
+            <div class="hero-content">
+                <div class="hero-kicker">POLYMARKET MARKETPLACE</div>
+                <h1>Assets for<br>every <span>Taste</span></h1>
+                <p>Discover 3D models, materials, environments, textures and tools created for 3D artists.</p>
+                <div class="hero-search">
+                    <span>⌕</span>
+                    <input id="hero-search-input" type="search" placeholder="Search 3D models, materials, textures...">
+                    <button id="hero-search-button" type="button">SEARCH</button>
+                </div>
+            </div>
+            <div class="hero-meta">
+                <div><strong>50+</strong><span>ASSETS</span></div>
+                <div><strong>23+</strong><span>CREATORS</span></div>
+                <div><strong>4</strong><span>CATEGORIES</span></div>
+            </div>
+        </section>
+
+        <section class="categories-section" id="categories">
+            <div class="section-heading">
+                <div><h2>Browse categories</h2></div>
+                <p>Find production-ready assets for your next Blender project.</p>
+            </div>
+            <div class="category-grid">
+                <a href="models.html" class="category-card category-large">
+                    <div class="category-image"><img src="Kuvat/industrial-main.jpg" alt="3D Models"></div>
+                    <div class="category-overlay"><h3>3D Models</h3><p>Characters · Props · Vehicles</p></div>
+                </a>
+                <a href="materials.html" class="category-card">
+                    <div class="category-image"><img src="Kuvat/metals-main.jpg" alt="Materials"></div>
+                    <div class="category-overlay"><h3>Materials</h3><p>PBR · Procedural · Shaders</p></div>
+                </a>
+                <a href="environments.html" class="category-card">
+                    <div class="category-image"><img src="Kuvat/forest-main.jpg" alt="Environments"></div>
+                    <div class="category-overlay"><h3>Environments</h3><p>Scenes · Locations · Worlds</p></div>
+                </a>
+                <a href="textures.html" class="category-card">
+                    <div class="category-image"><img src="Kuvat/textures-main.jpg" alt="Textures"></div>
+                    <div class="category-overlay"><h3>Textures</h3><p>2K · 4K · Seamless</p></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="products-section" id="featured">
+            <div class="section-heading">
+                <div><h2>Featured assets</h2></div>
+                <a href="#models">VIEW ALL →</a>
+            </div>
+            <div class="product-grid">
+                <article class="asset-card">
+                    <div class="asset-image">
+                        <a href="industrial-props.html" class="asset-image-link"><img src="Kuvat/industrial-main.jpg" alt="Industrial Props Pack"></a>
+                        <span class="asset-badge">FEATURED</span>
+                        <button class="wishlist" type="button" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="asset-info">
+                        <div class="asset-type">3D ASSET PACK</div>
+                        <h3>Industrial Props Pack</h3>
+                        <p>PropHaus</p>
+                        <div class="asset-bottom"><span>45+ PROPS</span><strong>$19.99</strong></div>
+                    </div>
+                </article>
+                <article class="asset-card">
+                    <div class="asset-image">
+                        <a href="concrete.html" class="asset-image-link"><img src="Kuvat/concrete-main.jpg" alt="Concrete Materials"></a>
+                        <span class="asset-badge">NEW</span>
+                        <button class="wishlist" type="button" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="asset-info">
+                        <div class="asset-type">MATERIAL</div>
+                        <h3>Concrete Surfaces</h3>
+                        <p>SurfaceLab</p>
+                        <div class="asset-bottom"><span>5 MATERIALS</span><strong>$6.00</strong></div>
+                    </div>
+                </article>
+                <article class="asset-card">
+                    <div class="asset-image">
+                        <a href="forest.html" class="asset-image-link"><img src="Kuvat/forest-main.jpg" alt="Nordic Forest Pack"></a>
+                        <button class="wishlist" type="button" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="asset-info">
+                        <div class="asset-type">ENVIRONMENT</div>
+                        <h3>Nordic Forest Pack</h3>
+                        <p>NorthFrame</p>
+                        <div class="asset-bottom"><span>BLENDER 4+ UE5</span><strong>$38.99</strong></div>
+                    </div>
+                </article>
+                <article class="asset-card">
+                    <div class="asset-image">
+                        <a href="scifi.html" class="asset-image-link"><img src="Kuvat/scifi-main.jpg" alt="Sci-Fi Kit"></a>
+                        <button class="wishlist" type="button" aria-label="Add to wishlist">♡</button>
+                    </div>
+                    <div class="asset-info">
+                        <div class="asset-type">ENVIRONMENT</div>
+                        <h3>Sci-Fi Kit</h3>
+                        <p>Modular hard-surface assets</p>
+                        <div class="asset-bottom"><span>65+ PROPS</span><strong>$19.99</strong></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="collection-section" id="models">
+            <div class="collection-header">
+                <div><h2>3D Models</h2></div>
+                <a href="industrial-props.html">EXPLORE 3D MODELS →</a>
+            </div>
+            <div class="horizontal-products">
+                <article class="small-asset">
+                    <div class="small-image"><a href="industrial-props.html" class="asset-image-link"><img src="Kuvat/industrial-main.jpg" alt="Industrial Props Pack"></a></div>
+                    <div class="small-info"><span>PROPS</span><h3>Industrial Props Pack</h3><p>$19.99</p></div>
+                </article>
+                <article class="small-asset">
+                    <div class="small-image"><a href="truck.html" class="asset-image-link"><img src="Kuvat/truck-main.jpg" alt="Vintage Delivery Truck"></a></div>
+                    <div class="small-info"><span>VEHICLE</span><h3>Vintage Delivery Truck</h3><p>$24.99</p></div>
+                </article>
+                <article class="small-asset">
+                    <div class="small-image"><a href="ww2.html" class="asset-image-link"><img src="Kuvat/ww2-main.jpg" alt="WW2 Germany Weapons"></a></div>
+                    <div class="small-info"><span>WEAPONS</span><h3>WW2 Germany Weapons</h3><p>$18.00</p></div>
+                </article>
+                <article class="small-asset">
+                    <div class="small-image"><a href="containers.html" class="asset-image-link"><img src="Kuvat/containers-main.jpg" alt="Shipping Containers"></a></div>
+                    <div class="small-info"><span>PROPS</span><h3>Shipping Containers</h3><p>$11.99</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="material-section" id="materials">
+            <div class="material-copy">
+                <div class="content-kicker">MATERIALS</div>
+                <h2>Give your<br>surfaces <span>character</span></h2>
+                <p>Procedural materials, PBR libraries and production-ready shaders for Blender.</p>
+                <a href="metals.html">EXPLORE MATERIALS →</a>
+            </div>
+            <div class="material-preview">
+                <div class="material-tile">
+                    <a href="concrete.html" class="asset-image-link"><img src="Kuvat/concrete-main.jpg" alt="Concrete Materials"></a>
+                    <div><span>5 MATERIALS</span><strong>Concrete Surfaces</strong></div>
+                </div>
+                <div class="material-tile">
+                    <a href="metals.html" class="asset-image-link"><img src="Kuvat/metals-main.jpg" alt="Industrial Metals"></a>
+                    <div><span>32 MATERIALS</span><strong>Industrial Metals</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="environment-section" id="environments">
+            <div class="section-heading">
+                <div><h2>Environments</h2></div>
+                <a href="environments.html">VIEW ALL →</a>
+            </div>
+            <div class="environment-grid">
+                <a href="factory.html" class="environment-card large">
+                    <img src="Kuvat/factory-main.jpg" alt="Abandoned Factory">
+                    <div><span>ENVIRONMENT</span><h3>Abandoned Factory</h3><p>$42.99</p></div>
+                </a>
+                <a href="cyberpunk.html" class="environment-card">
+                    <img src="Kuvat/cyberpunk-main.jpg" alt="Cyberpunk City">
+                    <div><span>CITY</span><h3>Cyberpunk City</h3><p>$161.99</p></div>
+                </a>
+                <a href="forest.html" class="environment-card">
+                    <img src="Kuvat/forest-main.jpg" alt="Nordic Forest">
+                    <div><span>NATURE</span><h3>Nordic Forest</h3><p>$38.99</p></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="creator-section" id="creators">
+            <div class="creator-content">
+                <div class="content-kicker">FOR ARTISTS &amp; CREATORS</div>
+                <h2>Have something<br>worth <span>sharing?</span></h2>
+                <p>Publish your Blender assets, build your audience and earn from your work.</p>
+                <a href="#" class="creator-button">BECOME A CREATOR <b>→</b></a>
+            </div>
+        </section>
+
+        <section class="market-cta">
+            <span>POLYMARKET MARKETPLACE</span>
+            <h2>Build something great<br>Thousands of assets<br>One place</h2>
+            <a href="#categories">START EXPLORING →</a>
+        </section>
+    </main>
+
+    <footer class="market-footer">
+        <div>Poly<span>Market</span></div>
+        <p>Created by ItzLin4ix © 2026</p>
+        <div class="footer-links">
+            <a href="#">ABOUT</a>
+            <a href="#">LICENSE</a>
+            <a href="#">SUPPORT</a>
+            <a href="#creators">CREATORS</a>
+        </div>
+    </footer>
+
+    <script src="header.js"></script>
+    <script src="assets.js"></script>
+    <script src="search.js"></script>
+    <script src="sidebar.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const io = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) { e.target.classList.add("revealed"); io.unobserve(e.target); }
+                });
+            }, { threshold: .12, rootMargin: "0px 0px -70px 0px" });
+
+            document.querySelectorAll(
+                ".categories-section, .products-section, .collection-section, .material-section, " +
+                ".environment-section, .creator-section, .market-cta"
+            ).forEach(el => io.observe(el));
+
+            document.querySelectorAll(".creator-button, .hero-search button").forEach(el => {
+                el.addEventListener("mousemove", e => {
+                    const r = el.getBoundingClientRect();
+                    el.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .08}px, ${(e.clientY - r.top - r.height / 2) * .08}px)`;
+                });
+                el.addEventListener("mouseleave", () => { el.style.transform = ""; });
+            });
+
+            const parallax = document.querySelectorAll(".category-card img, .material-tile img, .environment-card img");
+            window.addEventListener("scroll", () => {
+                const vh = window.innerHeight;
+                parallax.forEach(img => {
+                    const r = img.getBoundingClientRect();
+                    if (r.bottom < 0 || r.top > vh) return;
+                    img.style.translate = `0 ${(r.top + r.height / 2 - vh / 2) * -.018}px`;
+                    img.style.scale = "1.04";
+                });
+            }, { passive: true });
+
+            document.querySelectorAll(".wishlist").forEach(btn => {
+                btn.addEventListener("click", e => {
+                    e.preventDefault(); e.stopPropagation();
+                    const saved = btn.classList.toggle("saved");
+                    btn.textContent = saved ? "♥" : "♡";
+                });
+            });
+
+            document.querySelectorAll(".asset-image-link").forEach(link => {
+                link.addEventListener("dblclick", e => { e.preventDefault(); PolyCart.add(); });
+            });
+
+            document.querySelectorAll(".asset-image, .material-tile").forEach(card => {
+                card.addEventListener("mousemove", e => {
+                    if (window.innerWidth < 800) return;
+                    const r = card.getBoundingClientRect();
+                    const ry = ((e.clientX - r.left) / r.width - .5) * 5;
+                    const rx = ((e.clientY - r.top) / r.height - .5) * -5;
+                    card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-5px)`;
+                });
+                card.addEventListener("mouseleave", () => { card.style.transform = ""; });
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener("click", e => {
+                    const id = link.getAttribute("href");
+                    if (!id || id === "#") return;
+                    const target = document.querySelector(id);
+                    if (!target) return;
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: "smooth", block: "start" });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
